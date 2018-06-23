@@ -29,6 +29,8 @@ namespace PlayFab.Events
         public event PlayFabResultEvent<EmptyResult> OnEntityDeleteGroupResultEvent;
         public event PlayFabRequestEvent<DeleteRoleRequest> OnEntityDeleteRoleRequestEvent;
         public event PlayFabResultEvent<EmptyResult> OnEntityDeleteRoleResultEvent;
+        public event PlayFabRequestEvent<ExecuteEntityCloudScriptRequest> OnEntityExecuteEntityCloudScriptRequestEvent;
+        public event PlayFabResultEvent<ExecuteCloudScriptResult> OnEntityExecuteEntityCloudScriptResultEvent;
         public event PlayFabRequestEvent<FinalizeFileUploadsRequest> OnEntityFinalizeFileUploadsRequestEvent;
         public event PlayFabResultEvent<FinalizeFileUploadsResponse> OnEntityFinalizeFileUploadsResultEvent;
         public event PlayFabRequestEvent<GetEntityTokenRequest> OnEntityGetEntityTokenRequestEvent;
